@@ -8,4 +8,4 @@
 - 这次实验使用的是 **Jupyter notebook**，因此运行实验的话，直接用notebook打开 **main.ipynb**就可以了。
 
 1. **mnist_loader.py**是用来加载**MNIST**数据集的脚本。它里面提供的函数可以直接将数据集分成 训练集、验证集、测试集。
-2. **neural_network.py**是我写的一个神经网络类，里面实现了 前向、反向传播。还有一点，我直接在里面将网络的最后一层定义为 Softmax，如有需要可以将里面的 **forwardprop** 方法更改。
+2. **neural_network.py**是我写的一个神经网络类，里面实现了 前向、反向传播。

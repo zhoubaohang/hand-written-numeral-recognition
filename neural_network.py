@@ -51,15 +51,14 @@ class NeuralNetwork(object):
         activation = X
         activations = [X]
         zs = []
-        cnt = 1
         for w, b in zip(self.weights, self.bias):
             z = w.dot(activation) + b
             zs.append(z)
-            if cnt == self.num_layers-1:
-                exp_z = np.exp(z)
-                activation = exp_z / np.sum(exp_z)
-            else:
-                activation = self.__sigmoid(z)
+#             if cnt == self.num_layers-1:
+#                 exp_z = np.exp(z)
+#                 activation = exp_z / np.sum(exp_z)
+#             else:
+            activation = self.__sigmoid(z)
             activations.append(activation)
         return (activations, zs)
     
